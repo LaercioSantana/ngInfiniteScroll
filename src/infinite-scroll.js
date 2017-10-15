@@ -247,6 +247,10 @@ angular.module(MODULE_NAME, [])
         changeContainer(angular.element(elem.parent()));
       }
 
+      if (attrs.infiniteScrollSelf != null) {
+        changeContainer(elem);
+      }
+
       // infinte-scoll-immediate-check sets whether or not run the
       // expression passed on infinite-scroll for the first time when the
       // directive first loads, before any actual scroll.
